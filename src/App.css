@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #1e1e1e;
+  font-family: sans-serif;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+
+
+@media screen and (max-width:1200px){
+  .main-container{
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .sidebar{
+    position: static;
+    height: auto;
+  }
+}
+body{
+  scroll-behavior: smooth;
+}

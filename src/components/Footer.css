@@ -1,0 +1,145 @@
+.footers{
+  
+    height: 18vh;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-data h2{
+    color: aliceblue;
+}
+
+.btn{
+    padding: 10px;
+    width: 150px;
+  margin-right: 29px;
+ border: none;
+ color:black;
+ font-weight: 700;
+ border-radius: 8px;
+ text-decoration: none;
+ color: rgb(208, 189, 23);
+ margin-left: 20px;
+}
+
+.btn:hover{
+    color: aliceblue;
+    background-color: #ffc108;
+    border: 1px solid white;
+   transform: scale(1.1);
+} 
+
+.hire-btn {
+  display: inline-block;
+  padding: 11px;
+  width: 150px;
+  text-align: center;
+  background: white;
+  color: black;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  color: aliceblue;
+  background-color: #ffc108;
+  border: 1px solid white;
+  /* transform: scale(1.1); */
+}
+
+@media (max-width: 600px) {
+  .footers {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  
+  }
+
+  .footer-data h2 {
+    font-size: 18px;
+   
+  }
+
+ 
+
+  .btns {
+    width: 100%;
+    margin-right: 0;
+     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    
+    gap: 2px;
+  }
+   .btn,
+  .hire-btn {
+    width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+ 
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+  .footers {
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-data h2 {
+    font-size: 1.6rem;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn,
+  .hire-btn {
+    width: 70%;
+    margin: 0;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  .footers {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .footer-data h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn,
+  .hire-btn {
+    width: 85%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
