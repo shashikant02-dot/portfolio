@@ -42,7 +42,7 @@ const Experience = () => {
         <div className="cards">
           <div className="top-row">
             <img src={logo2} className="imgslogo" alt="company logo" />
-            <span className="joining">27/JAN/2025 - 27/JUL/2025</span>
+            <span className="joining">22/Dec/2025 - PRESENT</span>
           </div>
 
           <div className="intern">
