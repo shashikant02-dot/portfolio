@@ -1,55 +1,66 @@
 import React from "react";
 import "./Protfolio.css";
-import vite from '../assets/vite.svg'
-import image1 from'../assets/image1.png'
-import image2 from'../assets/image2.png'
+import image1 from "../assets/image1.png";
+import image11 from "../assets/image11.png";
 
 const Portfolio = () => {
   return (
     <div id="portfolio">
-      <h2 className="heading">Portfolio</h2>
+      <h2 className="heading">Project Developed</h2>
       <div className="line"></div>
-
 
       <div className="project-container">
         <div className="projects">
-            <img src={image1} alt=""></img>
-            <div className="card">
-                <h3>ONLINE TUTOR APK</h3>
-                <p>Build a Front-End E-learning website with login search and card features </p>
-                <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
+<a
+  href="https://tool-hub-vmam.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src={image1} alt="ToolHub Online Utility Tools Platform" />
+</a>
+          <div className="card">
+            <h3>ToolHub – Online Utility Tools Platform</h3>
+
+            <p>
+              Developed a utility platform providing tools like Image to Code,
+              Image to Excel, PDF Merger, PDF Splitter, JPG to PDF, Image
+              Converter, Image Compressor, Excel to JSON, CSV to JSON, and
+              Invoice Generator.
+            </p>
+
+            <b className="bold">Tech Stack:</b> Next.js, React.js, JavaScript,
+            Tailwind CSS, Git
+          </div>
         </div>
+
         <div className="projects">
-             <img src={image2} alt=""></img>
-            <div className="card">
-                <h3>ONLINE FOOD APK</h3>
-                <p>Build a Front-End website with designing the user interface,order menus and
-implementing the ordering process </p>
-                <span>HTML</span><span>CSS</span>
-            </div>
-        </div>
-        <div className="projects">
-             <img src={image1} alt=""></img>
-            <div className="card">
-                <h3>ONLINE TUTOR APK</h3>
-                <p>Build a Front-End E-learning website with login search and card features </p>
-                <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-        </div>
-        <div className="projects">
-             <img src={image2} alt=""></img>
-            <div className="card">
-                <h3>ONLINE FOOD APK</h3>
-                <p>Build a Front-End website with designing the user interface,order menus and
-implementing the ordering process </p>
-                <span>HTML</span><span>CSS</span>
-            </div>
+          {/* Image Click Link */}
+          <a
+            href="https://chhinahomes.com.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={image11}
+              alt="Chhina Homes Real Estate Website"
+            />
+          </a>
+
+          <div className="card">
+            <h3>Chhina Homes – Real Estate / Home Builder Website</h3>
+
+            <p>
+              Designed responsive pages, sections, and layouts using Elementor
+              page builder. Integrated and configured WordPress plugins for
+              forms, SEO, performance, and website functionality.
+            </p>
+
+            <b className="bold">Tech Stack:</b> WordPress, Elementor, Astra
+            Theme, HTML, CSS, Plugins.
+          </div>
         </div>
       </div>
-   
     </div>
-    
   );
 };
 
